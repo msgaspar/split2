@@ -1,5 +1,10 @@
 source "https://rubygems.org"
 
+gem "capistrano"
+gem "capistrano-rails"
+gem "capistrano-passenger"
+gem "capistrano-rvm"
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.2.1"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
