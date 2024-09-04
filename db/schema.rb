@@ -10,11 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2024_09_03_133020) do
+ActiveRecord::Schema[8.0].define(version: 2024_09_03_191023) do
   create_table "registros", force: :cascade do |t|
     t.string "nome"
     t.text "descricao"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.date "data"
+    t.decimal "valor"
+    t.boolean "entrada"
   end
 end
