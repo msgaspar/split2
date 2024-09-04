@@ -3,7 +3,9 @@
 one:
   nome: MyString
   descricao: MyText
+  data: "2024-08-23"
 
 two:
   nome: MyString
   descricao: MyText
+  data: "2024-09-01"

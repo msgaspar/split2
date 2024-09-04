@@ -11,7 +11,9 @@
 
   <div id="registros" class="min-w-full">
     <% @registros.each do |registro| %>
-      <%= render registro %>
+      <p class="my-5">
+        <%= mostrar_data(registro) %> - <%= number_to_currency(registro.valor) %> - <%= registro.nome %>
+      </p>
     <% end %>
   </div>
 </div>
