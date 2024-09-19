@@ -28,6 +28,12 @@ class RegistrosController < ApplicationController
     redirect_to @registro
   end
 
+  def destroy
+    @registro = Registro.find(params[:id])
+    @registro.destroy
+    redirect_to registros_url, status: :see_other
+  end
+
 private
 
   def registro_params
